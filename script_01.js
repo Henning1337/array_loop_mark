@@ -5,13 +5,13 @@
 //var myArr = ["Ich","bin","Hans"];
 //var myArr = ["Ich","bin","Hans","Hansson"];
 //var myArr = ["Ich","bin","Hans","Heinrich","Hansson"];
-var myArr = ["Ich","bin","Hans","Heinrich","Hansson","esq"];
+var arr = ["Ich","bin","Hans","Heinrich","Hansson","esq"];
 var mark = "!";
 
 // Funktionalität: String aus Array zusammensetzen mit Schleife
 // Test: 
-ausgabe(satzbauArr(myArr,mark));
-function satzbauArr(myArr,mark)
+ausgabe(satzbauArr(arr,mark));
+function satzbauArr(arr,mark)
 {
    
     var exclamation = "!";
@@ -25,73 +25,59 @@ switch (mark)
 {
     // . am Ende
     case punct:
-        for (var i = 0; i < myArr.length; i++) 
+        for (var i = 0; i < arr.length; i++) 
         { 
-            if (i == myArr.length -1)
+            if (i == arr.length -1)
             {
-                str += myArr[i] + punct;   
+                str += arr[i] + punct;   
             } else
             {
-                str += myArr[i] + gap;
+                str += arr[i] + gap;
             }
         }    
     break;
     // ! am Ende
     case exclamation:
-        for (var i = 0; i < myArr.length; i++) 
+        for (var i = 0; i < arr.length; i++) 
         { 
-            if (i == myArr.length -1)
+            if (i == arr.length -1)
             {
-                str += myArr[i] + exclamation;   
+                str += arr[i] + exclamation;   
             } else
             {
-                str += myArr[i] + gap;
+                str += arr[i] + gap;
             }
         }    
     break;
     // ? an Ende
     case question:
-        for (var i = 0; i < myArr.length; i++) 
+        for (var i = 0; i < arr.length; i++) 
         { 
-            if (i == myArr.length -1)
+            if (i == arr.length -1)
             {
-                str += myArr[i] + question;   
+                str += arr[i] + question;   
             } else
             {
-                str += myArr[i] + gap;
+                str += arr[i] + gap;
             }
         }    
     break;
     // sonst nichts am Ende
     default:
-            for (var i = 0; i < myArr.length; i++) 
+            for (var i = 0; i < arr.length; i++) 
             { 
-                if (i == myArr.length -1)
+                if (i == arr.length -1)
                 {
-                    str += myArr[i];   
+                    str += arr[i];   
                 } else
                 {
-                    str += myArr[i] + gap;
+                    str += arr[i] + gap;
                 }
             }    
     break;
     
 }
 return str;
-
-
-/*for (let i = 0; i < myArr.length; i++) 
-{ 
-    if (i == myArr.length -1)
-    {
-        str += myArr[i] + punct;   
-    } else
-    {
-        str += myArr[i] + gap;
-    }
-}    
-return str;
-*/
 }
 
 
