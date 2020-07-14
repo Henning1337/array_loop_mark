@@ -11,6 +11,8 @@ var mark = "!";
 // Funktionalität: String aus Array zusammensetzen mit Schleife
 // Test: 
 ausgabe(satzbauArr(arr,mark));
+ausgabe("Hallo Professor Falken");
+
 function satzbauArr(arr,mark)
 {
    
